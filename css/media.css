@@ -1,0 +1,693 @@
+/* Max Height 650px */
+@media only screen and (max-height: 650px) {
+
+  /* ============================================= Global CSS ============================================= */
+  .login_page.height-100vh,
+  .login_page .height-100vh {
+    min-height: 650px;
+  }
+
+  /* ============================================= Data Ready Page CSS ============================================= */
+  .data_ready_page.has_arrow .has_arrow_image {
+    display: none;
+  }
+}
+
+/* Max Height 1439px */
+@media only screen and (max-width: 1439px) {
+
+  /* ============================================= Login Screen ============================================= */
+  .login_page .login_box.login_right .login_right_container {
+    background-size: 45%;
+  }
+
+  /* ============================================= Index Product Page CSS ============================================= */
+  .product_page .title_container {
+    height: auto;
+  }
+
+  .product_page .title_container.title_with_arrow .title_text_box .text_box {
+    max-width: 46%;
+  }
+
+  .product_page .trial_box {
+    max-width: 32%;
+  }
+
+  .product_page .title_container.title_with_arrow .title_text_box .session_qly_box {
+    max-width: 22%;
+  }
+
+  .trial_box label {
+    margin-right: 10px;
+  }
+
+  .trial_box a {
+    margin: 0 10px;
+  }
+}
+
+/* Max Height 1280px */
+@media only screen and (max-width: 1280px) {
+
+  /* ============================================= Login Screen ============================================= */
+  .login_page .login_box.login_right .login_right_container {
+    background-size: 45%;
+  }
+
+  /* ============================================= Index Product Page CSS ============================================= */
+  .product_page .title_container.title_with_arrow .title_text_box .text_box {
+    max-width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .product_page .trial_box {
+    max-width: 50%;
+    justify-content: flex-start !important;
+    padding-left: 0;
+  }
+
+  .product_page .title_container.title_with_arrow .title_text_box .session_qly_box {
+    max-width: 50%;
+  }
+}
+
+/* Max Height 1199px */
+@media only screen and (max-width: 1199px) {
+
+  /* ============================================= Tooltip CSS ============================================= */
+  .custom_tooltip {
+    display: none;
+  }
+
+  /* ============================================= Login Screen ============================================= */
+  .login_page .login_box.login_right {
+    display: none;
+  }
+
+  .login_page .login_box.login_left {
+    padding: 50px 0;
+  }
+
+  .login_page .login_box.login_left .contianer_box .box_img {
+    margin-bottom: 50px;
+  }
+
+  .login_page .login_box .right_text_box,
+  .login_page .login_box .right_progress_box {
+    padding: 0;
+    text-align: center;
+    margin-bottom: 70px;
+    justify-content: center;
+  }
+
+  .login_page .login_box .right_text_box h2 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .login_page .login_box .right_text_box p {
+    line-height: 30px;
+  }
+
+  .login_page .login_box .right_progress_box {
+    position: relative;
+    bottom: 0;
+  }
+
+  /* ============================================= Dashboard Table ============================================= */
+  .table_container .box_4 {
+    width: 15%;
+  }
+
+  .table_container .box_5 {
+    width: 25%;
+  }
+
+  .table_container .box_6 {
+    width: 23%;
+  }
+
+  .table_container .table_body .body_row .box_btns .table_btn {
+    margin-left: 10px;
+  }
+
+  /* ============================================= Data Ready Page CSS ============================================= */
+  .data_ready_page.has_arrow .has_arrow_image {
+    display: none;
+  }
+}
+
+/* Max Height 991px */
+@media only screen and (max-width: 991px) {
+
+  /* ============================================= Left & Right Sidebar CSS ============================================= */
+  .left_side_bar {
+    width: 100%;
+    bottom: 0;
+    height: auto;
+    top: initial;
+    position: fixed;
+    min-height: initial;
+  }
+
+  .left_side_bar .sidebar_container {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .left_side_bar .sidebar_container .box_content.menu_box {
+    display: none;
+  }
+
+  .left_side_bar .sidebar_container .box_content {
+    width: 25%;
+    flex: 0 0 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .left_side_bar .sidebar_container .box_content a {
+    justify-content: center !important;
+  }
+
+  .left_side_bar .sidebar_container .box_content .svg_icon {
+    margin-right: 20px;
+  }
+
+  .left_side_bar .sidebar_container .box_content.active_boxed .svg_icon {
+    width: 55px;
+    height: initial;
+    margin-left: 0;
+    margin-right: 0;
+    position: relative;
+    top: 4px;
+  }
+
+  .right_side_bar {
+    width: 100%;
+    min-height: initial;
+    padding-bottom: 100px;
+  }
+
+  /* ============================================= Dashboard Table ============================================= */
+  .table_container .box_1 {
+    width: 110px;
+  }
+
+  .table_container .box_2 {
+    width: 210px;
+  }
+
+  .table_container .box_3 {
+    width: 100px;
+  }
+
+  .table_container .box_4 {
+    width: 150px;
+  }
+
+  .table_container .box_5 {
+    width: 250px;
+  }
+
+  .table_container .box_6 {
+    width: 220px;
+  }
+
+  .table_container .box_7 {
+    width: 52px;
+  }
+
+  .table_container {
+    overflow: auto;
+  }
+
+  .table_container .table_body .body_row,
+  .table_container .table_header {
+    flex-wrap: nowrap !important;
+  }
+
+  /* ============================================= Dashboard CSS ============================================= */
+  .folder_box {
+    margin-right: 30px;
+    width: auto;
+    margin-bottom: 30px;
+  }
+
+  .folder_box .box_icon {
+    width: 90px;
+  }
+
+  .folder_box .box_icon .icon_box,
+  .folder_box .box_icon .icon_box svg {
+    width: 100%;
+    height: auto;
+  }
+
+  .folder_box .box_icon .icon_number {
+    width: 15px;
+    height: 15px;
+  }
+
+  .folder_box .box_icon .icon_number span {
+    font-size: 10px;
+  }
+
+  .folder_box .folder_content h5 {
+    margin-bottom: 0;
+  }
+
+  /* ============================================= scedule Dashboard CSS ============================================= */
+  .scedule_dashboard_page .tabel_box {
+    display: inline-block !important;
+  }
+
+  .scedule_dashboard_page .table_container .box_1 {
+    width: 20%;
+  }
+
+  .scedule_dashboard_page .table_container .box_2 {
+    width: 9%;
+  }
+
+  .scedule_dashboard_page .table_container .box_3 {
+    width: 12%;
+  }
+
+  /* ============================================= Index Product Page CSS ============================================= */
+  .product_page header .header_container {
+    padding-bottom: 50px;
+    background: #FFF9F2;
+  }
+
+  .product_page header .header_container .header_text h2 {
+    color: #000000;
+  }
+
+  .product_page .title_container.title_with_arrow .title_text_box .text_box {
+    margin-bottom: 0px;
+  }
+
+  .product_page .trial_box {
+    max-width: 100%;
+    justify-content: center !important;
+    padding: 12px 15px 40px;
+    background-color: #2B4098;
+    border-top: 1px solid rgba(255, 255, 255, .1);
+  }
+
+  .product_page .title_container.title_with_arrow .title_text_box .session_qly_box {
+    max-width: 50%;
+  }
+
+  .trial_box label,
+  .trial_box a {
+    font-size: 14px;
+  }
+
+  .trial_box a.has_star {
+    background: #1A2C78;
+    border-radius: 52px;
+    color: #fff;
+    padding: 2px 11px;
+    border: none;
+  }
+
+  .trial_box a.btn {
+    color: rgba(255, 255, 255, .6);
+    background-color: transparent;
+    padding: 0;
+    margin-left: 10px;
+    border-bottom: 1px dashed rgba(255, 255, 255, .6);
+    border-radius: 0;
+  }
+
+  .product_page .product_content,
+  .product_page .session_qly_box {
+    padding-bottom: 50px !important;
+  }
+
+  .product_page .session_qly_box,
+  .product_page .table_container {
+    margin-top: -30px;
+  }
+
+  .product_page .table_container {
+    background-color: #fff;
+    border-radius: 24px;
+  }
+
+  .product_page .product_content .grph_box {
+    max-width: 100%;
+    display: none;
+    padding: 0 !important;
+  }
+
+  .product_page .product_content .grph_box.active {
+    display: block;
+  }
+
+  .product_page .product_content .grph_box h4 {
+    font-size: 18px;
+  }
+
+  .product_page .product_content .content_boxed a {
+    font-size: 14px;
+    margin: 10px 0 0 15px;
+    text-transform: capitalize;
+  }
+
+  .product_page .product_content .content_boxed a:first-of-type {
+    margin-left: 0;
+  }
+
+  .product_page .product_content .content_boxed a.active {
+    color: #fff;
+    border: none;
+  }
+
+  .product_page .product_content .content_boxed a.btn {
+    width: 105px;
+    border-radius: 52px;
+    border: none;
+    color: #fff;
+    opacity: 1;
+    text-transform: capitalize;
+    font-size: 14px;
+    justify-content: center;
+    padding: 3px 10px;
+    margin-left: 20px;
+  }
+
+  .product_page .session_qly_box {
+    background: #1A2C78;
+    border-radius: 24px 24px 0px 0px;
+  }
+  
+  .product_page .session_qly_box .svg_icon{
+    width: 37px;
+  }
+
+  .product_page .session_qly_box svg {
+    top: 0;
+  }
+
+  .product_page .session_qly_box p {
+    font-weight: 500;
+    font-size: 14px;
+    color: #FFFFFF;
+    margin-left: 10px !important;
+  }
+
+  .product_page .session_qly_box select {
+    background-color: #2B4098;
+    border-radius: 52px;
+    border: none;
+    color: #fff;
+    text-align: center;
+    width: 103px;
+    padding: 3px 0;
+    font-weight: 500;
+    font-size: 14px;
+    background-image: url(../image/svg_icons/dropdown_arrow_white.svg);
+    background-position: right 10px center;
+    padding-right: 23px;
+    text-indent: 23px;
+  }
+
+  .product_page .table_container .table_header {
+    border-top-left-radius: 24px;
+    border-top-right-radius: 24px;
+  }
+
+  .product_page .table_container .tabel_box {
+    display: block;
+  }
+
+  /* ============================================= Data Ready Page CSS ============================================= */
+  .no_title .form_container.data_ready_page {
+    min-height: calc(100vh - 190px);
+  }
+
+}
+
+/* Max Height 767px */
+@media only screen and (max-width: 767px) {
+
+  /* =========================================== Default Css =========================================== */
+  .title_container h1 {
+    font-size: 16px;
+  }
+
+  .title_container {
+    background-color: #fff;
+    border-top-left-radius: 24px;
+    border-top-right-radius: 24px;
+  }
+
+  .title_container.title_with_arrow .arrow_icon_svg {
+    padding-right: 10px;
+    margin-right: 10px;
+  }
+
+  .title_container.title_with_arrow .arrow_icon_svg svg {
+    width: 15px;
+    height: auto;
+  }
+
+  .title_container.title_with_arrow .arrow_icon_svg:after {
+    top: 1px;
+    height: 21px;
+  }
+
+  .title_container.title_with_arrow .title_text_box {
+    width: calc(100% - 35px);
+  }
+
+  .title_container .bottom_text ul li {
+    padding-left: 4px;
+    margin-left: 4px;
+    font-size: 10px;
+  }
+
+  .title_container .bottom_text ul li:after {
+    width: 2px;
+    height: 2px;
+    top: 9px;
+    left: 0px;
+  }
+
+  .title_container .bottom_text a {
+    background-image: url(../image/svg_icons/edit_icon.svg);
+    margin-left: 5px;
+    width: 10px;
+    font-size: 0;
+    height: 9px;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: none;
+    background-size: 10px;
+  }
+
+  .edit_dashboard_page .title_container.title_with_arrow .arrow_icon_svg:after {
+    top: -4px;
+    height: 34px;
+  }
+
+  /* ============================================= Left & Right Sidebar CSS ============================================= */
+  .left_side_bar .sidebar_container .box_content .text,
+  header .header_container .header_right_side .profile_box span,
+  header .header_container .header_right_side .profile_box:after,
+  header .header_container .header_right_side .profile_logout_text a,
+  header .header_container .header_right_side .profile_logout_text .slidebar_btn .text {
+    display: none;
+  }
+
+  .left_side_bar .sidebar_container .box_content .svg_icon {
+    margin-right: 0;
+  }
+
+  /* ============================================= Header ============================================= */
+  header .header_container {
+    padding-bottom: 60px;
+  }
+
+  header .header_container .header_right_side .profile_box {
+    margin: 0;
+  }
+
+  header .header_container .header_right_side .profile_logout_text .slidebar_btn {
+    padding: 6px 10px;
+    width: auto;
+  }
+
+  header .header_container .header_right_side .profile_logout_text .slidebar_btn .svg_icon {
+    height: auto;
+    top: 3px;
+    margin: 0;
+  }
+
+  header .header_container .header_right_side .profile_logout_text .slidebar_btn .svg_icon svg {
+    width: 18px;
+    height: 18px;
+  }
+
+  /* ============================================= Dashboard Table ============================================= */
+  .dashboard_title {
+    margin-top: -30px;
+  }
+
+  .table_container {
+    border-top-left-radius: 24px;
+    border-top-right-radius: 24px;
+    background-color: #fff;
+  }
+
+  .table_container .table_header,
+  .table_container .table_body,
+  .title_container,
+  .product_page .product_content,
+  .product_page .session_qly_box,
+  .product_page .table_container .table_body .body_row {
+    padding: 20px 15px;
+  }
+
+  .table_container .table_body .body_row div.active_text span {
+    display: none;
+  }
+
+  .table_container .table_header div {
+    font-size: 12px;
+  }
+
+  .table_container .table_body .body_row div,
+  .table_container .table_body .body_row span,
+  .product_page .product_content .content_boxed a {
+    font-size: 14px;
+  }
+
+  .table_container .table_body .body_row div.active_text:before {
+    left: 18px;
+    margin: 0;
+  }
+
+  /* ============================================= Sidebar ============================================= */
+  .slidebar {
+    width: 100%;
+    bottom: -100%;
+    height: calc(100vh - 85px);
+    top: initial;
+    border-radius: 24px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    right: 0;
+  }
+
+  .slidebar.active {
+    bottom: 0;
+  }
+
+  .slidebar .slidebar_container .slidebar_header h3 {
+    font-size: 20px;
+  }
+
+  .slidebar .slidebar_container .slidebar_header {
+    margin-bottom: 25px;
+  }
+
+  /* ============================================= Dashboard CSS ============================================= */
+  .folder_box {
+    width: 50%;
+    margin-bottom: 30px;
+    padding-right: 30px;
+    margin-right: 0;
+  }
+
+  .folder_box .folder_content h5,
+  .folder_box .folder_content p,
+  .folder_box .folder_content .status {
+    font-size: 12px;
+  }
+
+  /* ============================================= Edit Dashboard CSS ============================================= */
+  .edit_dashboard_header {
+    padding: 10px 12px;
+  }
+
+  .edit_dashboard_header .dashboard_boxed {
+    margin-right: 15px;
+  }
+
+  .edit_dashboard_header .dashboard_boxed span {
+    font-size: 10px;
+  }
+
+  /* ============================================= scedule Dashboard CSS ============================================= */
+  .scedule_dashboard_page .table_header {
+    padding: 7px 15px;
+  }
+
+  .scedule_dashboard_page .table_header .svg_icon {
+    width: 20px;
+  }
+
+  .scedule_dashboard_page .table_container .table_body {
+    padding: 0;
+  }
+
+  .scedule_dashboard_page .table_container .table_body .body_row {
+    padding: 15px 15px;
+  }
+
+  .scedule_dashboard_page .table_body .body_row .tabel_box {
+    font-size: 12px;
+  }
+
+  .scedule_dashboard_page .table_container .box_1 {
+    width: 30%;
+  }
+
+  .scedule_dashboard_page .table_container .box_2 {
+    width: 9%;
+  }
+
+  .scedule_dashboard_page .table_container .box_3 {
+    width: 10%;
+  }
+
+  .scedule_dashboard_page .table_container .box_6 {
+    width: 16%;
+  }
+
+  .scedule_dashboard_page .table_container .box_7 {
+    width: 6%;
+  }
+
+  /* ============================================= Index Product Page CSS ============================================= */
+  .product_page .trial_box {
+    justify-content: space-between !important;
+    padding-bottom: 50px !important;
+  }
+
+  .product_page .table_container .box_1 {
+    width: 25%;
+  }
+
+  .product_page .table_container .box_2 {
+    width: 20%;
+  }
+
+  .product_page .table_container .box_3,
+  .product_page .table_container .box_4,
+  .product_page .table_container .box_5 {
+    width: 18%;
+  }
+  
+  .product_page .table_container .box_3{
+    font-weight: 600;
+  }
+
+}

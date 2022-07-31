@@ -1,0 +1,419 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>Clinical - Profile Page</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/bootstrap_4.3.1.css">
+  <link rel="stylesheet" href="css/bootstrap-drawer.css">
+  <!-- Font Awesome CSS -->
+  <link rel="stylesheet" href="css/fontawsome.min.css">
+  <!-- Google Font CSS -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <!-- Tooltip CSS -->
+  <link href="https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet">
+  <!-- Global CSS -->
+  <link rel="stylesheet" href="css/animation.css" type="text/css">
+  <link rel="stylesheet" href="css/global.css" type="text/css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/main.css" type="text/css">
+  <link rel="stylesheet" href="css/media.css" type="text/css">
+  <!-- Jquery Libs -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <!-- Bootstrap Js -->
+  <script src="js/popper.min.js" type="text/javascript"></script>
+  <script src="js/bootstrap_4.3.1.js" type="text/javascript"></script>
+  <script src="js/bootstrap-drawer.js" type="text/javascript"></script>
+  <!-- Tooltip JS -->
+  <script src="https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+  <!-- Custom Js -->
+  <script src="js/custom.js" type="text/javascript"></script>
+</head>
+
+<body class="fixed_scroll">
+  <!-- loader -->
+  <div id="win_loader">
+    <div id="wl_start">
+      <div class="wls_dot_box">
+        <div class="wls_dot"></div>
+        <div class="wls_dot"></div>
+        <div class="wls_dot"></div>
+        <div class="wls_dot"></div>
+        <div class="wls_dot"></div>
+        <div class="wls_dot"></div>
+      </div>
+    </div>
+  </div>
+  <!-- Login Page -->
+  <div class="dashboard_page fixed_scroll height-100vh d-flex flex-wrap align-items-start justify-content-start">
+    <!-- left side bar -->
+    <div class="left_side_bar height-100vh">
+      <div class="sidebar_container d-flex flex-wrap">
+        <!-- Menu icon | There is some custom class on it and it's mandatory -->
+        <div class="box_content menu_box col-12">
+          <a href="#" class="menu_btn col-12 p-0 d-flex flex-wrap align-items-center justify-content-start" data-toggle="collapsed">
+            <!-- icon box -->
+            <span class="svg_icon">
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 27 18">
+                <style type="text/css">
+                  .menu_line {
+                    fill: none;
+                    stroke: #FFFFFF;
+                    stroke-width: 2;
+                    stroke-linecap: round;
+                  }
+
+                </style>
+                <line class="menu_line" x1="1" y1="1" x2="26" y2="1" />
+                <line class="menu_line" x1="6" y1="9" x2="26" y2="9" />
+                <line class="menu_line" x1="1" y1="17" x2="26" y2="17" />
+              </svg>
+            </span>
+            <!-- text box -->
+            <span class="text">SAFEY SVG LOGO</span>
+          </a>
+        </div>
+        <!-- Home icon | There is some custom class on it and it's mandatory -->
+        <div class="box_content home_box col-12">
+          <a href="#" class="home_btn col-12 p-0 d-flex flex-wrap align-items-center justify-content-start">
+            <!-- icon box -->
+            <span class="svg_icon">
+              <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_95_525)">
+                  <path d="M19.2675 7.5575L12.9467 1.23584C12.1644 0.455835 11.1047 0.0178223 10 0.0178223C8.89528 0.0178223 7.83564 0.455835 7.05334 1.23584L0.73251 7.5575C0.499531 7.78899 0.314818 8.06442 0.189079 8.36782C0.0633393 8.67123 -0.000925333 8.99657 1.00662e-05 9.325V17.5058C1.00662e-05 18.1689 0.263402 18.8048 0.732243 19.2736C1.20108 19.7424 1.83697 20.0058 2.50001 20.0058H17.5C18.163 20.0058 18.7989 19.7424 19.2678 19.2736C19.7366 18.8048 20 18.1689 20 17.5058V9.325C20.0009 8.99657 19.9367 8.67123 19.8109 8.36782C19.6852 8.06442 19.5005 7.78899 19.2675 7.5575ZM12.5 18.3392H7.5V15.0608C7.5 14.3978 7.7634 13.7619 8.23224 13.2931C8.70108 12.8242 9.33696 12.5608 10 12.5608C10.663 12.5608 11.2989 12.8242 11.7678 13.2931C12.2366 13.7619 12.5 14.3978 12.5 15.0608V18.3392ZM18.3333 17.5058C18.3333 17.7268 18.2455 17.9388 18.0893 18.0951C17.933 18.2514 17.721 18.3392 17.5 18.3392H14.1667V15.0608C14.1667 13.9558 13.7277 12.896 12.9463 12.1146C12.1649 11.3332 11.1051 10.8942 10 10.8942C8.89493 10.8942 7.83513 11.3332 7.05373 12.1146C6.27233 12.896 5.83334 13.9558 5.83334 15.0608V18.3392H2.50001C2.27899 18.3392 2.06703 18.2514 1.91075 18.0951C1.75447 17.9388 1.66668 17.7268 1.66668 17.5058V9.325C1.66745 9.10415 1.75517 8.89249 1.91084 8.73584L8.23167 2.41668C8.70142 1.94912 9.33722 1.68663 10 1.68663C10.6628 1.68663 11.2986 1.94912 11.7683 2.41668L18.0892 8.73834C18.2442 8.89437 18.3319 9.10502 18.3333 9.325V17.5058Z" fill="white" />
+                </g>
+                <defs>
+                  <clipPath id="clip0_95_525">
+                    <rect width="20" height="20" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </span>
+            <!-- text box -->
+            <span class="text">Home</span>
+          </a>
+        </div>
+        <!-- Reports icon | There is some custom class on it and it's mandatory -->
+        <div class="box_content report_box col-12">
+          <a href="#" class="report_btn col-12 p-0 d-flex flex-wrap align-items-center justify-content-start">
+            <!-- icon box -->
+            <span class="svg_icon">
+              <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_95_527)">
+                  <path d="M19.1667 18.3333H4.16667C3.50363 18.3333 2.86774 18.0699 2.3989 17.6011C1.93006 17.1323 1.66667 16.4964 1.66667 15.8333V0.833333C1.66667 0.61232 1.57887 0.400358 1.42259 0.244078C1.26631 0.0877974 1.05435 0 0.833333 0C0.61232 0 0.400358 0.0877974 0.244078 0.244078C0.0877974 0.400358 0 0.61232 0 0.833333L0 15.8333C0.00132321 16.938 0.440735 17.997 1.22185 18.7782C2.00296 19.5593 3.062 19.9987 4.16667 20H19.1667C19.3877 20 19.5996 19.9122 19.7559 19.7559C19.9122 19.5996 20 19.3877 20 19.1667C20 18.9457 19.9122 18.7337 19.7559 18.5774C19.5996 18.4211 19.3877 18.3333 19.1667 18.3333Z" fill="white" />
+                  <path d="M4.99984 16.6667C5.22085 16.6667 5.43281 16.5789 5.58909 16.4227C5.74538 16.2664 5.83317 16.0544 5.83317 15.8334V10.0001C5.83317 9.77907 5.74538 9.56711 5.58909 9.41083C5.43281 9.25455 5.22085 9.16675 4.99984 9.16675C4.77882 9.16675 4.56686 9.25455 4.41058 9.41083C4.2543 9.56711 4.1665 9.77907 4.1665 10.0001V15.8334C4.1665 16.0544 4.2543 16.2664 4.41058 16.4227C4.56686 16.5789 4.77882 16.6667 4.99984 16.6667Z" fill="white" />
+                  <path d="M8.3335 8.33333V15.8333C8.3335 16.0543 8.42129 16.2663 8.57757 16.4226C8.73385 16.5789 8.94582 16.6667 9.16683 16.6667C9.38784 16.6667 9.5998 16.5789 9.75608 16.4226C9.91236 16.2663 10.0002 16.0543 10.0002 15.8333V8.33333C10.0002 8.11232 9.91236 7.90036 9.75608 7.74408C9.5998 7.5878 9.38784 7.5 9.16683 7.5C8.94582 7.5 8.73385 7.5878 8.57757 7.74408C8.42129 7.90036 8.3335 8.11232 8.3335 8.33333Z" fill="white" />
+                  <path d="M12.5 10.8333V15.8333C12.5 16.0543 12.5878 16.2663 12.7441 16.4226C12.9004 16.5789 13.1123 16.6667 13.3333 16.6667C13.5544 16.6667 13.7663 16.5789 13.9226 16.4226C14.0789 16.2663 14.1667 16.0543 14.1667 15.8333V10.8333C14.1667 10.6123 14.0789 10.4004 13.9226 10.2441C13.7663 10.0878 13.5544 10 13.3333 10C13.1123 10 12.9004 10.0878 12.7441 10.2441C12.5878 10.4004 12.5 10.6123 12.5 10.8333Z" fill="white" />
+                  <path d="M16.6665 7.50008V15.8334C16.6665 16.0544 16.7543 16.2664 16.9106 16.4227C17.0669 16.579 17.2788 16.6667 17.4998 16.6667C17.7209 16.6667 17.9328 16.579 18.0891 16.4227C18.2454 16.2664 18.3332 16.0544 18.3332 15.8334V7.50008C18.3332 7.27907 18.2454 7.06711 18.0891 6.91083C17.9328 6.75455 17.7209 6.66675 17.4998 6.66675C17.2788 6.66675 17.0669 6.75455 16.9106 6.91083C16.7543 7.06711 16.6665 7.27907 16.6665 7.50008Z" fill="white" />
+                  <path d="M5.00015 7.50001C5.22114 7.49996 5.43307 7.41213 5.58932 7.25584L8.57765 4.26751C8.73648 4.1162 8.94744 4.0318 9.16682 4.0318C9.38619 4.0318 9.59715 4.1162 9.75598 4.26751L11.566 6.07751C12.0348 6.54619 12.6706 6.80948 13.3335 6.80948C13.9964 6.80948 14.6322 6.54619 15.101 6.07751L19.756 1.42251C19.9078 1.26534 19.9918 1.05484 19.9899 0.836346C19.988 0.617848 19.9003 0.408838 19.7458 0.254331C19.5913 0.0998248 19.3823 0.0121841 19.1638 0.0102854C18.9453 0.00838673 18.7348 0.092382 18.5777 0.24418L13.9227 4.89834C13.7664 5.05457 13.5545 5.14233 13.3335 5.14233C13.1125 5.14233 12.9006 5.05457 12.7443 4.89834L10.9343 3.08918C10.4655 2.6205 9.82973 2.35721 9.16682 2.35721C8.50391 2.35721 7.86813 2.6205 7.39932 3.08918L4.41098 6.07751C4.29447 6.19405 4.21513 6.34252 4.183 6.50415C4.15086 6.66578 4.16736 6.8333 4.23042 6.98555C4.29347 7.1378 4.40026 7.26794 4.53727 7.35951C4.67427 7.45108 4.83536 7.49997 5.00015 7.50001Z" fill="white" />
+                </g>
+                <defs>
+                  <clipPath id="clip0_95_527">
+                    <rect width="20" height="20" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </span>
+            <!-- text box -->
+            <span class="text">Reports</span>
+          </a>
+        </div>
+        <!-- Downloads icon | There is some custom class on it and it's mandatory -->
+        <div class="box_content download_box col-12">
+          <a href="#" class="download_btn col-12 p-0 d-flex flex-wrap align-items-center justify-content-start">
+            <!-- icon box -->
+            <span class="svg_icon">
+              <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_95_519)">
+                  <path d="M20.0003 15.75L20.0003 4.25C20.0103 3.13419 19.5772 2.06 18.796 1.2632C18.0148 0.466401 16.9494 0.0120959 15.8337 -1.82138e-07L13.3337 -2.91417e-07C13.1126 -3.01077e-07 12.9007 0.0877971 12.7444 0.244077C12.5881 0.400358 12.5003 0.612319 12.5003 0.833333C12.5003 1.05435 12.5881 1.26631 12.7444 1.42259C12.9007 1.57887 13.1126 1.66667 13.3337 1.66667L15.8337 1.66667C16.5075 1.6785 17.1491 1.95713 17.6178 2.44143C18.0865 2.92572 18.3439 3.57614 18.3337 4.25L18.3337 15.75C18.3439 16.4239 18.0865 17.0743 17.6178 17.5586C17.1491 18.0429 16.5075 18.3215 15.8337 18.3333L4.16699 18.3333C3.49315 18.3215 2.85153 18.0429 2.38285 17.5586C1.91418 17.0743 1.65674 16.4239 1.66699 15.75L1.66699 4.25C1.65674 3.57614 1.91418 2.92572 2.38285 2.44143C2.85153 1.95713 3.49315 1.6785 4.16699 1.66667L6.66699 1.66667C6.888 1.66667 7.09997 1.57887 7.25624 1.42259C7.41253 1.26631 7.50032 1.05435 7.50032 0.833333C7.50032 0.612319 7.41253 0.400357 7.25624 0.244077C7.09997 0.0877968 6.888 -5.73165e-07 6.66699 -5.82826e-07L4.16699 -6.92104e-07C3.0512 0.0120953 1.9858 0.466401 1.20462 1.2632C0.423447 2.06 -0.00967421 3.13419 0.000324063 4.25L0.000323561 15.75C-0.00967481 16.8658 0.423446 17.94 1.20462 18.7368C1.9858 19.5336 3.0512 19.9879 4.16699 20L15.8337 20C16.9494 19.9879 18.0148 19.5336 18.796 18.7368C19.5772 17.94 20.0103 16.8658 20.0003 15.75Z" fill="white" />
+                  <path d="M10.0001 2.5C9.77914 2.5 9.56717 2.5878 9.41089 2.74408C9.25461 2.90036 9.16682 3.11232 9.16682 3.33333L9.19182 14.3233L5.58932 10.7208C5.51244 10.6412 5.42049 10.5778 5.31882 10.5341C5.21715 10.4904 5.1078 10.4674 4.99715 10.4665C4.8865 10.4655 4.77677 10.4866 4.67436 10.5285C4.57194 10.5704 4.4789 10.6323 4.40065 10.7105C4.32241 10.7887 4.26053 10.8818 4.21863 10.9842C4.17673 11.0866 4.15565 11.1963 4.15661 11.307C4.15757 11.4176 4.18056 11.527 4.22423 11.6287C4.26791 11.7303 4.33139 11.8223 4.41098 11.8992L8.23265 15.7208C8.70147 16.1895 9.33724 16.4528 10.0001 16.4528C10.6631 16.4528 11.2988 16.1895 11.7676 15.7208L15.5893 11.9008C15.7411 11.7437 15.8251 11.5332 15.8232 11.3147C15.8213 11.0962 15.7337 10.8872 15.5792 10.7326C15.4247 10.5781 15.2156 10.4905 14.9971 10.4886C14.7787 10.4867 14.5682 10.5707 14.411 10.7225L10.8585 14.2742L10.8335 3.33333C10.8335 3.11232 10.7457 2.90036 10.5894 2.74408C10.4331 2.5878 10.2212 2.5 10.0001 2.5Z" fill="white" />
+                </g>
+                <defs>
+                  <clipPath id="clip0_95_519">
+                    <rect width="20" height="20" fill="white" transform="translate(20) rotate(90)" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </span>
+            <!-- text box -->
+            <span class="text">Downloads</span>
+          </a>
+        </div>
+        <!-- Settings icon | There is some custom class on it and it's mandatory -->
+        <div class="box_content setting_box col-12">
+          <a href="#" class="setting_btn col-12 p-0 d-flex flex-wrap align-items-center justify-content-start">
+            <!-- icon box -->
+            <span class="svg_icon">
+              <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_95_522)">
+                  <path d="M9.99984 6.66675C9.34057 6.66675 8.6961 6.86224 8.14794 7.22852C7.59978 7.59479 7.17253 8.11538 6.92024 8.72447C6.66795 9.33356 6.60194 10.0038 6.73055 10.6504C6.85917 11.297 7.17664 11.8909 7.64282 12.3571C8.10899 12.8233 8.70294 13.1407 9.34954 13.2694C9.99614 13.398 10.6664 13.332 11.2755 13.0797C11.8845 12.8274 12.4051 12.4001 12.7714 11.852C13.1377 11.3038 13.3332 10.6594 13.3332 10.0001C13.3332 9.11603 12.982 8.26818 12.3569 7.64306C11.7317 7.01794 10.8839 6.66675 9.99984 6.66675ZM9.99984 11.6667C9.67021 11.6667 9.34797 11.569 9.07389 11.3859C8.79981 11.2027 8.58619 10.9424 8.46004 10.6379C8.3339 10.3333 8.30089 9.99823 8.3652 9.67493C8.42951 9.35163 8.58824 9.05466 8.82133 8.82157C9.05442 8.58848 9.35139 8.42975 9.67469 8.36544C9.99799 8.30113 10.3331 8.33414 10.6376 8.46028C10.9422 8.58643 11.2025 8.80005 11.3856 9.07413C11.5688 9.34821 11.6665 9.67045 11.6665 10.0001C11.6665 10.4421 11.4909 10.866 11.1784 11.1786C10.8658 11.4912 10.4419 11.6667 9.99984 11.6667Z" fill="white" />
+                  <path d="M17.7452 11.5833L17.3752 11.37C17.5417 10.4637 17.5417 9.53463 17.3752 8.62833L17.7452 8.415C18.0297 8.25085 18.2791 8.03226 18.4792 7.77172C18.6792 7.51117 18.826 7.21378 18.9111 6.89651C18.9962 6.57925 19.018 6.24832 18.9753 5.92263C18.9325 5.59694 18.826 5.28286 18.6618 4.99833C18.4977 4.7138 18.2791 4.46439 18.0185 4.26434C17.758 4.06428 17.4606 3.9175 17.1433 3.83238C16.8261 3.74726 16.4951 3.72547 16.1695 3.76824C15.8438 3.81101 15.5297 3.91751 15.2452 4.08167L14.8743 4.29583C14.1739 3.69743 13.369 3.23354 12.5002 2.9275V2.5C12.5002 1.83696 12.2368 1.20107 11.7679 0.732233C11.2991 0.263392 10.6632 0 10.0002 0C9.33712 0 8.70123 0.263392 8.23239 0.732233C7.76355 1.20107 7.50016 1.83696 7.50016 2.5V2.9275C6.63131 3.23464 5.8267 3.69967 5.12682 4.29917L4.75432 4.08333C4.17969 3.75181 3.49689 3.66214 2.85614 3.83405C2.21539 4.00596 1.66918 4.42536 1.33766 5C1.00614 5.57463 0.916468 6.25743 1.08838 6.89818C1.26028 7.53893 1.67969 8.08514 2.25432 8.41667L2.62432 8.63C2.45775 9.5363 2.45775 10.4654 2.62432 11.3717L2.25432 11.585C1.67969 11.9165 1.26028 12.4627 1.08838 13.1035C0.916468 13.7442 1.00614 14.427 1.33766 15.0017C1.66918 15.5763 2.21539 15.9957 2.85614 16.1676C3.49689 16.3395 4.17969 16.2499 4.75432 15.9183L5.12516 15.7042C5.8258 16.3027 6.63098 16.7666 7.50016 17.0725V17.5C7.50016 18.163 7.76355 18.7989 8.23239 19.2678C8.70123 19.7366 9.33712 20 10.0002 20C10.6632 20 11.2991 19.7366 11.7679 19.2678C12.2368 18.7989 12.5002 18.163 12.5002 17.5V17.0725C13.369 16.7654 14.1736 16.3003 14.8735 15.7008L15.246 15.9158C15.8206 16.2474 16.5034 16.337 17.1442 16.1651C17.7849 15.9932 18.3311 15.5738 18.6627 14.9992C18.9942 14.4245 19.0838 13.7417 18.9119 13.101C18.74 12.4602 18.3206 11.914 17.746 11.5825L17.7452 11.5833ZM15.6218 8.43666C15.904 9.45922 15.904 10.5391 15.6218 11.5617C15.5726 11.7396 15.5838 11.9289 15.6538 12.0998C15.7238 12.2707 15.8485 12.4135 16.0085 12.5058L16.9118 13.0275C17.1033 13.138 17.2431 13.3201 17.3004 13.5336C17.3577 13.7472 17.3277 13.9747 17.2172 14.1662C17.1067 14.3578 16.9247 14.4975 16.7111 14.5548C16.4976 14.6121 16.27 14.5822 16.0785 14.4717L15.1735 13.9483C15.0134 13.8556 14.827 13.8188 14.6437 13.8437C14.4604 13.8686 14.2906 13.9538 14.161 14.0858C13.4193 14.843 12.4848 15.3833 11.4585 15.6483C11.2794 15.6944 11.1206 15.7987 11.0073 15.9449C10.894 16.0911 10.8326 16.2709 10.8327 16.4558V17.5C10.8327 17.721 10.7449 17.933 10.5886 18.0893C10.4323 18.2455 10.2203 18.3333 9.99932 18.3333C9.77831 18.3333 9.56635 18.2455 9.41007 18.0893C9.25379 17.933 9.16599 17.721 9.16599 17.5V16.4567C9.16608 16.2717 9.10464 16.092 8.99133 15.9458C8.87802 15.7996 8.7193 15.6952 8.54016 15.6492C7.51378 15.3831 6.5796 14.8416 5.83849 14.0833C5.70893 13.9513 5.53911 13.8661 5.35579 13.8412C5.17247 13.8163 4.98608 13.8531 4.82599 13.9458L3.92266 14.4683C3.82785 14.5239 3.72298 14.5602 3.6141 14.5751C3.50521 14.59 3.39445 14.5832 3.2882 14.5551C3.18195 14.527 3.08231 14.4782 2.99501 14.4114C2.90771 14.3446 2.83447 14.2613 2.77952 14.1661C2.72457 14.0709 2.68899 13.9658 2.67482 13.8568C2.66066 13.7479 2.66819 13.6371 2.69698 13.5311C2.72578 13.425 2.77527 13.3257 2.8426 13.2389C2.90994 13.152 2.99379 13.0793 3.08932 13.025L3.99266 12.5033C4.15262 12.411 4.27739 12.2682 4.34737 12.0973C4.41736 11.9264 4.4286 11.7371 4.37932 11.5592C4.09712 10.5366 4.09712 9.45672 4.37932 8.43417C4.42771 8.25657 4.41594 8.06794 4.34584 7.89774C4.27574 7.72754 4.15125 7.58534 3.99182 7.49333L3.08849 6.97167C2.89698 6.86116 2.75722 6.6791 2.69994 6.46554C2.64266 6.25199 2.67257 6.02442 2.78307 5.83292C2.89358 5.64141 3.07564 5.50164 3.2892 5.44436C3.50275 5.38709 3.73032 5.41699 3.92182 5.5275L4.82682 6.05083C4.98647 6.14376 5.17248 6.18101 5.3556 6.15672C5.53872 6.13244 5.70858 6.04799 5.83849 5.91667C6.58023 5.15945 7.51468 4.61918 8.54099 4.35417C8.72069 4.30797 8.87982 4.20313 8.99319 4.05625C9.10655 3.90937 9.16766 3.72887 9.16683 3.54333V2.5C9.16683 2.27899 9.25462 2.06702 9.4109 1.91074C9.56718 1.75446 9.77914 1.66667 10.0002 1.66667C10.2212 1.66667 10.4331 1.75446 10.5894 1.91074C10.7457 2.06702 10.8335 2.27899 10.8335 2.5V3.54333C10.8334 3.7283 10.8948 3.90804 11.0082 4.05423C11.1215 4.20043 11.2802 4.30478 11.4593 4.35083C12.486 4.61679 13.4205 5.15824 14.1618 5.91667C14.2914 6.04872 14.4612 6.13391 14.6445 6.1588C14.8278 6.1837 15.0142 6.14689 15.1743 6.05417L16.0777 5.53167C16.1725 5.47608 16.2773 5.43981 16.3862 5.42492C16.4951 5.41003 16.6059 5.41683 16.7121 5.44492C16.8184 5.47301 16.918 5.52184 17.0053 5.58859C17.0926 5.65535 17.1658 5.73872 17.2208 5.83389C17.2757 5.92907 17.3113 6.03417 17.3255 6.14316C17.3397 6.25214 17.3321 6.36285 17.3033 6.46891C17.2745 6.57497 17.225 6.67429 17.1577 6.76114C17.0904 6.848 17.0065 6.92068 16.911 6.975L16.0077 7.49667C15.8485 7.58892 15.7244 7.73123 15.6546 7.90141C15.5848 8.07159 15.5733 8.26008 15.6218 8.4375V8.43666Z" fill="white" />
+                </g>
+                <defs>
+                  <clipPath id="clip0_95_522">
+                    <rect width="20" height="20" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </span>
+            <!-- text box -->
+            <span class="text">Settings</span>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- Right side bar -->
+    <div class="right_side_bar height-100vh fixed_scroll">
+      <div class="sidebar_container">
+        <!-- Header -->
+        <header>
+          <div class="header_container d-flex flex-wrap align-items-center justify-content-between">
+            <!-- header title -->
+            <div class="header_text">
+              <h2>Tata Hospital</h2>
+            </div>
+            <!-- right side box -->
+            <div class="header_right_side d-flex flex-wrap align-items-center justify-content-start">
+              <!-- profile image -->
+              <a href="#" class="profile_box d-flex flex-wrap align-items-center justify-content-start">
+                <!-- profil image -->
+                <div class="box_image">
+                  <img src="image/header/profile_img.svg" alt="profile_img" />
+                </div>
+                <!-- text name -->
+                <span>Tata Hospital</span>
+              </a>
+              <!-- profile btns text -->
+              <div class="profile_logout_text d-flex flex-wrap align-items-center justify-content-start">
+                <!-- text -->
+                <a href="#">Logout</a>
+                <!-- btn -->
+                <a href="#" class="btn slidebar_btn d-flex flex-wrap align-items-center justify-content-center" data-src="study_slidebar" data-toggle="collapsed">
+                  <!-- svg icon -->
+                  <span class="svg_icon">
+                    <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M9.16667 4.1571L5.83333 4.1571L5.83333 0.831421C5.83333 0.610914 5.74554 0.399439 5.58926 0.243518C5.43297 0.0875959 5.22101 0 5 0C4.77899 0 4.56702 0.0875959 4.41074 0.243518C4.25446 0.399439 4.16667 0.610914 4.16667 0.831421L4.16667 4.1571L0.833333 4.1571C0.61232 4.1571 0.400358 4.2447 0.244078 4.40062C0.0877974 4.55654 0 4.76802 0 4.98853C0 5.20903 0.0877974 5.42051 0.244078 5.57643C0.400358 5.73235 0.61232 5.81995 0.833333 5.81995L4.16667 5.81995L4.16667 9.14563C4.16667 9.36614 4.25446 9.57761 4.41074 9.73353C4.56702 9.88945 4.77899 9.97705 5 9.97705C5.22101 9.97705 5.43297 9.88945 5.58926 9.73353C5.74554 9.57761 5.83333 9.36614 5.83333 9.14563L5.83333 5.81995L9.16667 5.81995C9.38768 5.81995 9.59964 5.73235 9.75592 5.57643C9.9122 5.42051 10 5.20903 10 4.98853C10 4.76802 9.9122 4.55654 9.75592 4.40062C9.59964 4.2447 9.38768 4.1571 9.16667 4.1571Z" fill="white" />
+                    </svg>
+                  </span>
+                  <!-- text -->
+                  <span class="text">Add New Study</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </header>
+        <!-- Dashboard content -->
+        <section class="dashboard_title">
+          <!-- Title Container -->
+          <div class="title_container title_with_arrow">
+            <div class="arrow_icon_svg horizontal_line">
+              <a href="#" class="back_icon">
+                <svg width="33" height="24" viewBox="0 0 33 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M31 13.5C31.8284 13.5 32.5 12.8284 32.5 12C32.5 11.1716 31.8284 10.5 31 10.5L31 13.5ZM0.939341 10.9393C0.353554 11.5251 0.353554 12.4749 0.93934 13.0607L10.4853 22.6066C11.0711 23.1924 12.0208 23.1924 12.6066 22.6066C13.1924 22.0208 13.1924 21.0711 12.6066 20.4853L4.12132 12L12.6066 3.51472C13.1924 2.92893 13.1924 1.97918 12.6066 1.3934C12.0208 0.80761 11.0711 0.80761 10.4853 1.3934L0.939341 10.9393ZM31 10.5L2 10.5L2 13.5L31 13.5L31 10.5Z" fill="black" />
+                </svg>
+              </a>
+            </div>
+            <div class="title_text_box">
+              <h1>Test Report by Study</h1>
+            </div>
+          </div>
+          <!-- Dashboard table | custom class -->
+          <div class="privacy_page form_container folder_container d-flex flex-wrap align-items-center justify-content-center">
+            <div class="container_box col-12 p-0">
+              <form action="" method="post">
+                
+                <!-- Contact input -->
+                <div class="form_box col-12 p-0">
+                  <label>Study *</label>
+                  <select>
+                    <option>SalFord Study</option>
+                    <option>SalFord Study</option>
+                    <option>SalFord Study</option>
+                    <option>SalFord Study</option>
+                  </select>
+                </div>
+                <!-- password input -->
+                <div class="form_box col-12 p-0">
+                  <label>DETAILS *</label>
+                  <select>
+                    <option>SalFord Study</option>
+                    <option>SalFord Study</option>
+                    <option>SalFord Study</option>
+                    <option>SalFord Study</option>
+                  </select>
+                </div>
+                
+                <div class="form_box col-12 p-0">
+                  <button type="button" class="btn">Search</button>
+                </div>
+                
+                
+                <!-- two btn -->
+                <div class="form_two row col-12 p-0">
+                  <div class="btn_box col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+                    <button type="button" class="gray_btn btn">Back</button>
+                  </div>
+                  <div class="btn_box col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+                    <button type="button" class="gray_btn btn">Export to Excel</button>
+                  </div>
+                </div>
+
+              </form>
+            </div>
+          </div>
+        </section>
+        <!-- Slidebar -->
+        <section class="slidebar" id="org_slidebar">
+          <div class="slidebar_container">
+            <form action="" method="post">
+              <div class="slidebar_header d-flex flex-wrap align-items-center">
+                <h3>Add Organisation</h3>
+                <div class="close_btn">
+                  <a href="#" class="close_icon">
+                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M20.3332 1.66669L1.6665 20.3334" stroke="#778181" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                      <path d="M1.6665 1.66669L20.3332 20.3334" stroke="#778181" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <div class="slidebar_body">
+
+                <!-- Organisation Name -->
+                <div class="form_box col-12 p-0">
+                  <label>Organisation Name</label>
+                  <input type="text" class="input-text" placeholder="Tata Hospital" />
+                </div>
+                <!-- Contact input -->
+                <div class="form_box col-12 p-0">
+                  <label>Contact Name</label>
+                  <input type="password" class="input-text" placeholder="Mike" />
+                </div>
+                <!-- Contact input -->
+                <div class="form_box col-12 p-0">
+                  <label>EMAIL</label>
+                  <input type="password" class="input-text" placeholder="info@tatahospital.com" />
+                </div>
+                <!-- password input -->
+                <div class="form_box col-12 p-0">
+                  <label>Password</label>
+                  <input type="password" class="input-text" placeholder="*************" />
+                </div>
+                <!-- password input -->
+                <div class="form_box col-12 p-0">
+                  <label>Address</label>
+                  <input type="password" class="input-text" placeholder="" />
+                </div>
+
+              </div>
+              <div class="slidebar_footer">
+                <!-- radio btn -->
+                <div class="form_radio custom_radio d-flex flex-wrap align-items-center position-relative">
+                  <input type="radio" id="custom_radio">
+                  <span></span>
+                  <label for="custom_radio">active</label>
+                </div>
+                <!-- two btn -->
+                <div class="form_two row">
+                  <div class="btn_box col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+                    <button type="button" class="gray_btn btn">Cancel</button>
+                  </div>
+                  <div class="btn_box col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+                    <button type="button" class="pink_btn btn">Save</button>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </section>
+        <!-- Slidebar 2 -->
+        <section class="slidebar sliderbar_two" id="study_slidebar">
+          <div class="slidebar_container">
+            <form action="" method="post">
+              <div class="slidebar_header d-flex flex-wrap align-items-center">
+                <h3>Add New Study</h3>
+                <div class="close_btn">
+                  <a href="#" class="close_icon">
+                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M20.3332 1.66669L1.6665 20.3334" stroke="#778181" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                      <path d="M1.6665 1.66669L20.3332 20.3334" stroke="#778181" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <div class="slidebar_body">
+
+                <!-- Organisation Name -->
+                <div class="form_box col-12 p-0">
+                  <label>study name</label>
+                  <input type="text" class="input-text" placeholder="salFord Study" />
+                </div>
+                <!-- Contact input -->
+                <div class="form_box col-12 p-0">
+                  <label>principal investigator</label>
+                  <input type="text" class="input-text" placeholder="Vaibhav Deshmukh" />
+                </div>
+                <!-- Contact input -->
+                <div class="form_box col-12 p-0">
+                  <label>investigator EMAIL</label>
+                  <input type="email" class="input-text" placeholder="vaibhav.deshmukh@tatahospital.com" />
+                </div>
+                <!-- Contact input -->
+                <div class="form_box col-12 p-0 d-xl-none d-lg-none ">
+                  <label>PASSWORD</label>
+                  <input type="password" class="input-text" placeholder="*************" />
+                </div>
+
+                <div class="form_box form_two_box col-12 p-0 row">
+                  <!-- custom radio boxed -->
+                  <div class="box_content col-lg-6 col-md-12 col-sm-12 col-12">
+                    <div class="content_boxed custom_radio_2 d-flex flex-wrap justify-content-center position-relative">
+                      <input type="radio" id="custom_radio_2">
+                      <div class="custom_radio_boxed d-flex flex-wrap justify-content-center">
+                        <img src="image/form_icon/radio_img_1.svg" alt="radio_img_1" />
+                        <label for="custom_radio_2">Peak Flow Meter</label>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- custom radio boxed -->
+                  <div class="box_content col-lg-6 col-md-12 col-sm-12 col-12">
+                    <div class="content_boxed custom_radio_2 d-flex flex-wrap justify-content-center position-relative">
+                      <input type="radio" id="custom_radio_2">
+                      <div class="custom_radio_boxed d-flex flex-wrap justify-content-center">
+                        <img src="image/form_icon/radio_img_2.svg" alt="radio_img_2" />
+                        <label for="custom_radio_2">Pocket Spirometer</label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+              <div class="slidebar_footer">
+                <!-- radio btn -->
+                <div class="form_radio custom_radio d-flex flex-wrap align-items-center position-relative">
+                  <input type="radio" id="custom_radio">
+                  <span></span>
+                  <label for="custom_radio">active</label>
+                </div>
+                <!-- two btn -->
+                <div class="form_two row">
+                  <div class="btn_box col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+                    <button type="button" class="gray_btn btn">Cancel</button>
+                  </div>
+                  <div class="btn_box col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+                    <button type="button" class="pink_btn btn">Save</button>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

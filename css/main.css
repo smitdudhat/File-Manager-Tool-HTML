@@ -1,0 +1,747 @@
+/* ============================================= Tooltip CSS ============================================= */
+.custom_tooltip {
+  position: absolute;
+  background-color: #FFF9F2;
+  top: 0;
+  z-index: 11;
+  left: 90px;
+  border-radius: 8px;
+}
+
+.custom_tooltip .custom_tooltip_container {
+  padding: 15px 28px;
+  border-radius: 8px;
+}
+
+.custom_tooltip .custom_tooltip_container:after {
+  content: "";
+  position: absolute;
+  background-image: url(../image/svg_icons/tooltip_arrow.svg);
+  width: 9px;
+  height: 16px;
+  top: 20px;
+  left: -8px;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 5;
+}
+
+.custom_tooltip p {
+  font-weight: 500;
+  color: #000000;
+  margin: 0;
+}
+
+.custom_tooltip span.inprogress {
+  color: #EC754B;
+}
+
+.custom_tooltip span.complete {
+  color: #67BC93;
+}
+
+/* ============================================= Left & Right Sidebar CSS ============================================= */
+.left_side_bar {
+  background: #AF4EA6;
+  overflow-x: hidden;
+  width: 80px;
+  transition: all 0.3s ease-in-out;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 3;
+}
+
+.left_side_bar.active {
+  width: 240px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.left_side_bar .sidebar_container {
+  width: 240px;
+}
+
+.left_side_bar .sidebar_container .box_content {
+  padding: 20px 25px;
+}
+
+.left_side_bar .sidebar_container .box_content .svg_icon {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  margin-right: 34px;
+}
+
+.left_side_bar .sidebar_container .box_content.active_boxed .svg_icon {
+  width: 55px;
+  height: 48px;
+  margin-left: -17px;
+  margin-right: 16px;
+}
+
+.left_side_bar .sidebar_container .box_content .text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: capitalize;
+  color: #FFFFFF;
+}
+
+.left_side_bar .sidebar_container .box_content.menu_box {
+  padding: 28px 25px;
+  background: #A73F9D;
+  margin-bottom: 30px;
+}
+
+.left_side_bar .sidebar_container .box_content.menu_box .svg_icon {
+  width: 27px;
+  height: 16px;
+  margin-right: 28px;
+}
+
+.left_side_bar .sidebar_container .box_content.menu_box .text {
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+.right_side_bar {
+  width: calc(100% - 80px);
+  margin-left: auto;
+}
+
+/* ============================================= Header ============================================= */
+header .header_container {
+  background: #FFF9F2;
+  padding: 15px 22px;
+}
+
+header .header_container .header_text h2 {
+  font-weight: 500;
+  font-size: 20px;
+  color: #000000;
+  margin: 0;
+}
+
+header .header_container .header_right_side .profile_box {
+  margin-right: 45px;
+  position: relative;
+}
+
+header .header_container .header_right_side .profile_box .box_image {
+  margin-right: 22px;
+}
+
+header .header_container .header_right_side .profile_logout_text a {
+  margin-right: 30px;
+}
+
+header .header_container .header_right_side .profile_logout_text a:last-of-type {
+  margin-right: 0;
+}
+
+header .header_container .header_right_side .profile_logout_text .slidebar_btn {
+  background: #AF4EA6;
+  border-radius: 4px;
+  color: #fff;
+  font-weight: 500;
+  font-size: 16px;
+  width: 220px;
+  padding: 12px 20px;
+}
+
+header .header_container .header_right_side .profile_logout_text .slidebar_btn .svg_icon {
+  height: 10px;
+  position: relative;
+  top: -5px;
+  margin-right: 12px;
+}
+
+/* ============================================= Login Screen ============================================= */
+.login_page .login_box.login_left {
+  width: 450px;
+}
+
+.login_page .login_box.login_right {
+  width: calc(100% - 450px);
+  background: #FFF9F2;
+}
+
+.login_page .login_box.login_left .contianer_box {
+  max-width: 385px;
+  width: 100%;
+  padding: 0 15px;
+}
+
+.login_page .login_box.login_left .contianer_box .box_img {
+  margin-bottom: 100px;
+}
+
+.login_page .login_box.login_right .login_right_container {
+  background-image: url(../image/login_page/login_bg.svg);
+  background-position: bottom right -22px;
+  background-repeat: no-repeat;
+  background-size: 530px;
+}
+
+
+.login_page .login_box .right_text_box {
+  padding: 0 0px 0 75px;
+  max-width: 490px;
+}
+
+.login_page .login_box .right_text_box h2 {
+  font-weight: 500;
+  font-size: 60px;
+  line-height: 70px;
+  text-transform: capitalize;
+  color: #000000;
+  margin-bottom: 20px;
+}
+
+.login_page .login_box .right_text_box h2 strong {
+  font-weight: 500;
+  color: #AF4EA6;
+}
+
+.login_page .login_box .right_text_box p {
+  font-size: 24px;
+  line-height: 20px;
+  text-transform: capitalize;
+  color: #000000;
+  opacity: 0.5;
+  padding-left: 5px;
+}
+
+.login_page .login_box .right_progress_box {
+  padding: 0 0px 0 75px;
+  position: absolute;
+  bottom: 40px;
+}
+
+.login_page .login_box .right_progress_box .box_content {
+  width: 125px;
+  margin-right: 20px;
+}
+
+.login_page .login_box .right_progress_box .box_content:last-of-type {
+  margin-right: 0;
+}
+
+.login_page .login_box .right_progress_box .box_content .green_text {
+  font-weight: 500;
+  font-size: 60px;
+  line-height: 70px;
+  color: #67BC93;
+  margin-bottom: -8px;
+}
+
+.login_page .login_box .right_progress_box .box_content .gray_text {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  color: #000000;
+  opacity: 0.5;
+}
+
+/* ============================================= Dashboard Table ============================================= */
+.table_container .tabel_box {
+  padding: 0 5px;
+}
+
+.table_container .box_1 {
+  width: 10%;
+}
+
+.table_container .box_2 {
+  width: 15%;
+}
+
+.table_container .box_3 {
+  width: 5%;
+}
+
+.table_container .box_4 {
+  width: 25%;
+}
+
+.table_container .box_5 {
+  width: 20%;
+}
+
+.table_container .box_6 {
+  width: 18%;
+}
+
+.table_container .box_7 {
+  width: 7%;
+}
+
+.table_container .table_header {
+  background: rgba(248, 249, 255, 0.6);
+  padding: 20px 17px;
+  border-bottom: 1px solid #EEF0FF;
+}
+
+.table_container .table_header div {
+  color: #000000;
+  opacity: 0.5;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.table_container .table_body .body_row {
+  padding: 5px 0;
+  margin-bottom: 35px;
+}
+
+.table_container .table_body .body_row div,
+.table_container .table_body .body_row span {
+  line-height: 24px;
+  font-size: 16px;
+  color: #000000;
+}
+
+.table_container .table_body .body_row span.password_code {
+  position: relative;
+  top: 6px;
+}
+
+.table_container .table_body .body_row div.active_text,
+.table_container .table_body .body_row div.active_text span {
+  color: #67BC93;
+  position: relative;
+}
+
+.table_container .table_body .body_row div.active_text:before {
+  content: "";
+  width: 7px;
+  height: 7px;
+  background: #67BC93;
+  display: inline-block;
+  border-radius: 100px;
+  position: relative;
+  top: -2px;
+  margin-right: 8px;
+}
+
+.table_container .table_body .body_row .show_hide {
+  margin-left: 12px;
+}
+
+.table_container .table_body .body_row .box_btns .table_btn {
+  margin-left: 22px;
+}
+
+.table_container .table_body .body_row .box_btns .table_btn:first-of-type {
+  margin-left: 0;
+}
+
+/* ============================================= Sidebar ============================================= */
+.slidebar {
+  position: fixed;
+  right: -100%;
+  top: 0;
+  z-index: 99;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 20px rgb(0 0 0 / 5%);
+  padding: 32px 33px;
+  overflow-y: auto;
+  height: 100vh;
+  transition: all 0.5s ease-in-out;
+  max-width: 440px;
+}
+
+.slidebar.active {
+  right: 0;
+}
+
+.slidebar .slidebar_container .slidebar_header {
+  margin-bottom: 65px;
+}
+
+.slidebar .slidebar_container .slidebar_header h3 {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: inherit;
+  margin: 0;
+  width: calc(100% - 24px);
+}
+
+.slidebar .slidebar_body {
+  margin-bottom: 90px;
+}
+
+.slidebar .slidebar_container {
+  min-height: 100%;
+  position: relative;
+  padding-bottom: 100px;
+}
+
+.slidebar .slidebar_container .slidebar_footer {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+/* ============================================= Dashboard CSS ============================================= */
+.folder_box {
+  margin-right: 65px;
+  margin-bottom: 65px;
+}
+
+.folder_box .box_icon .icon_number {
+  height: 28px;
+  width: 28px;
+  border-radius: 100%;
+  background: #FFFFFF;
+  position: absolute;
+  right: 5px;
+  bottom: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.folder_box .box_icon .icon_number span {
+  font-weight: 600;
+  font-size: 14px;
+  color: #000000;
+  display: inline-block;
+}
+
+.folder_box .folder_content {
+  margin-top: 15px;
+}
+
+.folder_box .folder_content h5 {
+  font-weight: 500;
+  font-size: 16px;
+  margin: 0 0 10px;
+}
+
+.folder_box .folder_content p,
+.folder_box .folder_content .status {
+  color: #000000;
+  opacity: 0.5;
+  font-weight: normal;
+  font-size: 14px;
+}
+
+.folder_box .folder_content p {
+  margin-bottom: -3px;
+}
+
+.folder_box .folder_content .status {
+  opacity: 1;
+  position: relative;
+}
+
+.folder_box .folder_content .status:before {
+  content: "";
+  width: 7px;
+  height: 7px;
+  background: #888888;
+  display: inline-block;
+  border-radius: 100%;
+  margin-right: 7px;
+  position: relative;
+  top: -1px;
+}
+
+.folder_box .folder_content .status.ongoing:before {
+  background: #FF6600;
+}
+
+.folder_box .folder_content .status.complete:before {
+  background: #67BC93;
+}
+
+/* ============================================= Edit Dashboard CSS ============================================= */
+.edit_dashboard_page .title_container.title_with_arrow .arrow_icon_svg:after {
+  top: -17px;
+  height: 56px;
+}
+
+.edit_dashboard_header {
+  border: 1px solid #E6E6E6;
+  border-left: 0;
+  border-right: 0;
+  padding: 20px 22px;
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
+
+.edit_dashboard_header .dashboard_boxed {
+  margin-right: 22px;
+}
+
+.edit_dashboard_header .dashboard_boxed:last-of-type {
+  margin-right: 0;
+}
+
+.edit_dashboard_header .dashboard_boxed span {
+  color: #000000;
+  opacity: 0.5;
+}
+
+.edit_dashboard_header .dashboard_boxed span.bold {
+  opacity: 1;
+}
+
+/* ============================================= scedule Dashboard CSS ============================================= */
+.scedule_dashboard_page .edit_dashboard_header {
+  margin-bottom: 0;
+}
+
+.scedule_dashboard_page .table_header {
+  background-color: transparent;
+}
+
+.scedule_dashboard_page .table_header .tabel_box.box_1 {
+  opacity: 1;
+}
+
+.scedule_dashboard_page .table_header .tabel_box span {
+  color: #000000;
+  font-weight: 500;
+  position: relative;
+  top: 2px;
+  margin-left: 5px;
+}
+
+.scedule_dashboard_page .table_header .svg_icon {
+  width: auto;
+  display: inline-block;
+  opacity: 1;
+}
+
+.scedule_dashboard_page .table_header .svg_icon svg {
+  top: 0;
+}
+
+.scedule_dashboard_page .table_body {
+  padding: 0;
+}
+
+.scedule_dashboard_page .table_body .body_row {
+  margin-bottom: 0;
+  padding: 15px 22px;
+  border-bottom: 1px solid #EEF0FF;
+}
+
+.scedule_dashboard_page .table_container .box_1 {
+  width: 16%;
+}
+
+.scedule_dashboard_page .table_container .box_2 {
+  width: 17%;
+}
+
+.scedule_dashboard_page .table_container .box_3 {
+  width: 16%;
+}
+
+.scedule_dashboard_page .table_container .box_4 {
+  width: 14%;
+}
+
+.scedule_dashboard_page .table_container .box_5 {
+  width: 15%;
+  text-align: center;
+}
+
+.scedule_dashboard_page .table_container .box_6 {
+  width: 15%;
+  text-align: center;
+}
+
+/* ============================================= Data Ready Page CSS ============================================= */
+.data_ready_page.has_arrow .container_box {
+  overflow: hidden;
+  position: relative;
+}
+
+.data_ready_page.has_arrow .has_arrow_image {
+  width: 465px;
+  height: calc(100vh - 257px);
+  max-height: 100%;
+  top: -152px;
+  left: 102px;
+  position: absolute;
+}
+
+.data_ready_page.has_arrow .has_arrow_image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: left top;
+}
+
+/* ============================================= Form Page CSS ============================================= */
+.form_container {
+  min-height: calc(100vh - 220px);
+  overflow: hidden;
+}
+
+.no_title .form_container {
+  min-height: calc(100vh - 85px);
+}
+
+.privacy_page form {
+  max-width: 356px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.email_sent {
+  margin: 50px 0;
+}
+
+.email_sent .svg_icon {
+  width: 93px;
+  margin: 0 auto 20px;
+}
+
+.email_sent .svg_icon svg {
+  top: 0;
+}
+
+.email_sent h6 {
+  font-weight: 500;
+  font-size: 24px;
+  color: #000000;
+  margin-bottom: 12px;
+}
+
+.email_sent p {
+  color: #000000;
+  opacity: 0.6;
+  margin-bottom: 40px;
+}
+
+.data_ready .svg_icon {
+  width: 83px;
+}
+
+/* ============================================= Index Product Page CSS ============================================= */
+.product_page header .header_container,
+.product_page .title_container,
+.product_page .product_content {
+  background-color: #2B4098;
+}
+
+.product_page header .header_container .header_text h2,
+.product_page header .header_container .header_right_side .profile_box,
+.product_page header .header_container .header_right_side .profile_logout_text a,
+.product_page .title_container h1,
+.product_page .title_container .bottom_text ul li,
+.product_page .trial_box label,
+.product_page .title_container.title_with_arrow .session_qly_box .box_content select {
+  color: #fff;
+}
+
+.product_page .title_container {
+  border-top: 1px solid rgba(255, 255, 255, .1);
+}
+
+.product_page .title_container svg path {
+  fill: #fff;
+}
+
+.product_page .trial_box a.has_star .svg_icon svg path {
+  fill: #FFC725;
+}
+
+.product_page .title_container.title_with_arrow .session_qly_box .box_content .svg_icon svg path {
+  fill: #00D16C;
+}
+
+.product_page .edit_dashboard_page .title_container.title_with_arrow .arrow_icon_svg:after {
+  background-color: #fff;
+}
+
+.product_page .title_container.title_with_arrow .session_qly_box .box_content select {
+  background-image: url(../image/svg_icons/dropdown_arrow_white.svg);
+  width: 152px;
+  border: none;
+}
+
+.product_page .title_container.title_with_arrow .session_qly_box .box_content select option {
+  color: #000;
+}
+
+.product_page .title_container.title_with_arrow .title_text_box .text_box {
+  max-width: 40%;
+  width: 100%;
+  padding-right: 10px;
+}
+
+.product_page .trial_box {
+  max-width: 40%;
+  width: 100%;
+  padding: 0 15px;
+}
+
+.product_page .title_container.title_with_arrow .title_text_box .session_qly_box {
+  max-width: 20%;
+  width: 100%;
+  padding: 0 15px;
+}
+
+.product_page .product_content {
+  border-top: 1px solid rgba(255, 255, 255, .1);
+  padding-top: 25px;
+}
+
+.product_page .product_content .grph_box {
+  max-width: 50%;
+  padding-right: 36px;
+  width: 100%;
+}
+
+.product_page .product_content .grph_box:nth-child(2) {
+  padding-left: 36px;
+  padding-right: 0;
+}
+
+.product_page .product_content .grph_box h4 {
+  font-weight: 500;
+  font-size: 24px;
+  text-transform: capitalize;
+  color: #FFFFFF;
+  margin-bottom: 25px;
+}
+
+.product_page .table_container .box_1 {
+  width: 16%;
+}
+
+.product_page .table_container .box_2 {
+  width: 24%;
+}
+
+.product_page .table_container .box_3,
+.product_page .table_container .box_4{
+  width: 25%;
+}
+
+.product_page .table_container .box_5 {
+  width: 10%;
+}
+
+.product_page .table_container .table_body {
+  padding: 0;
+}
+
+.product_page .table_container .table_body .body_row {
+  border-bottom: 1px solid #EEF0FF;
+  margin-bottom: 0;
+  padding-top: 22px;
+  padding-bottom: 22px;
+}
+
+.product_page .table_container .table_body .body_row div.green_text {
+  color: #67BC93;
+}
